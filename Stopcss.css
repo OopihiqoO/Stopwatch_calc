@@ -1,0 +1,96 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('background.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    background-color: rgba(255, 255, 0, 0.95); 
+    width: 40%;
+    min-width: 500px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 1px 0;
+    padding-bottom: 50px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.timerDisplay {
+    position: relative;
+    width: 92%;
+    left: 4%;
+    padding: 40px 0;
+    font-family: 'Roboto Mono', monospace;
+    color: blue; 
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 40px;
+}
+
+.climber-icon {
+    position: absolute;
+    top: -5px;
+    left: -9px;
+    width: 67px; 
+}
+
+.clockDisplay {
+    font-family: 'Roboto Mono', monospace;
+    color: blue; 
+    font-size: 24px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.buttons {
+    width: 90%;
+    margin: 20px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button {
+    width: 120px;
+    height: 45px;
+    background-color: #205e94; 
+    color: #ffffff;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    border-radius: 22px;
+    cursor: pointer;
+    outline: none;
+}
+
+.buttons button:nth-last-child(2) {
+    background-color: #d23332; 
+}
+
+.buttons button:nth-last-child(1) {
+    background-color: #20b380; 
+}
+
+.countdownContainer {
+    text-align: center; 
+    margin-top: 40px; 
+    padding: 20px; 
+}
+
+.countdownDisplay {
+    font-family: 'Roboto Mono', monospace;
+    color: blue; 
+    font-size: 24px;
+    margin-top: 10px; 
+}
